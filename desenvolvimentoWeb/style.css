@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background-color: aliceblue; 
+}
+
+header h1 {
+  color: #407bac;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+section h2 {
+  color: #407bac;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px auto;
+}
+
+section article {
+  color: #32536e;
+  text-align: justify;
+  margin: 20px 25px;
+
+}
+
+section div {
+  border: 1px solid black;
+  margin: 20px 25px;
+  padding: 10px;
+}
+
+section div h3 {
+  color: #526aac;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+section div p {
+  color: #313e63;
+  margin: 10px 20px;
+  text-align: justify;
+}
+
+section div h4 {
+  color: blue;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.quadrado1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  position: absolute;
+  left: 30px;
+  background-color: red;
+
+  
+}
+
+.quadrado2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #45d013;
+  position: absolute;
+  left: 80px;
+  background-color: #45d013;
+}
+
+.circulo1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  left: 85px;
+  top: 550px;
+
+}
+
+.circulo2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #bbcc02;
+  border-radius: 50%;
+  background-color: #bbcc02;
+  position: absolute;
+  left: 185px;
+  top: 550px;
+}
+
