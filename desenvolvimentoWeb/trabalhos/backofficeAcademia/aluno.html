@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backoffice | Check In Box</title>
+  <link rel="stylesheet" href="aluno.css">
+</head>
+
+<body>
+  <header>
+    <h1>Painel de cadastros</h1>
+  </header>
+
+
+  <main>
+    <fieldset class="fieldset">
+      <legend>Cadastro de alunos</legend>
+      <form action="" class="formulario">
+        
+        <label for="inputNome">Nome</label>
+        <input type="text" id="inputNome">
+
+        <label for="inputCPF">CPF</label>
+        <input type="text" id="inputCPF" oninput="mascara(this)">
+
+        <label for="inputDataUso">Data limite de us'o</label>
+        <input type="date" id="inputDataUso">
+
+        <label for="inputTelefone">Telefone</label>
+        <input type="tel" id="inputTelefone">
+
+        <label for="inputEmail">E-mail</label>
+        <input type="email" id="inputEmail">
+
+        <label for="inputNecessidadesEspeciais">Necessidades especiais?</label>
+        <textarea name="" id="inputNecessidadesEspeciais" cols="30" rows="10"></textarea>
+        
+        <label for="inputGenero">Gênero</label>
+        <div class="divGenero">
+          <div class="inputLabelGenero">
+
+            <input type="radio" class="inputGenero" name="generoCheck">Masculino
+          </div>
+          <div class="inputLabelGenero">
+
+            <input type="radio" class="inputGenero" name="generoCheck">Feminino
+          </div>
+        </div>
+      </form>
+      <div class="campoBotoes">
+        <button class="botoesSteps"><a href=""></a> Voltar</button>
+        <button class="botoesSteps">Proximo</button>
+      </div>
+    </fieldset>
+  </main>
+  <footer></footer>
+</body>
+<script>
+
+  function mascara(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])) { 
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 3 || v.length == 7) i.value += ".";
+   if (v.length == 11) i.value += "-";
+}
+
+</script>
+</html>
