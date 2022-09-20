@@ -6,15 +6,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-
 h1 {
     text-align: center;
     font-size: 2em;
     margin: 20px 0;
 }
 
-.fieldset {
+fieldset {
     background-color: white;
     padding: 10px;
     width: 50vw;
@@ -24,6 +22,14 @@ h1 {
 legend {
     margin: 0 15px;
     font-weight: 600;
+}
+
+input {
+    margin: 10px 0;
+    padding: 0 5px;
+    font-size: .8em;
+    height: 30px;
+    border-radius: 5px;
 }
 
 .formulario {
@@ -38,21 +44,11 @@ legend {
     margin: 10px 0;
 }
 
-input {
-    margin: 10px 0;
-    padding: 0 5px;
-    font-size: .8em;
-    height: 30px;
-}
 
 .divGenero {
     display: flex;
     flex-direction: column;
 
-}
-
-.inputGenero {
-    height: 15px;
 }
 
 .inputLabelGenero {
@@ -79,8 +75,4 @@ input {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-input {
-    border-radius: 5px;
 }
