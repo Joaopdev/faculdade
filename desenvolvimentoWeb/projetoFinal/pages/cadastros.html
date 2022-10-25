@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estiloPadrao.css">
+  <link rel="stylesheet" href="../css/cadastros.css">
+  <link rel="stylesheet" href="../css/formularios.css">
+  <title>ManuteMec&trade; | Cadastros</title>
+</head>
+
+<body>
+  <header class="cabecalhoDefault">
+    <section class="menuDefault">
+      <div class="logotipo">
+        <img class="imgLogotipo" src="../assets/logotipo.png" alt="Logotipo ManuteMec">
+        <p>Você no controle de seu veículo</p>
+      </div>
+      <nav class="navBarMenu">
+        <ul class="listaNavBar">
+          <a href="../index.html">
+            <li class="listItem">Home</li>
+          </a>
+          <a href="manutencao.html">
+            <li class="listItem">Manutenções</li>
+          </a>
+          <a href="cadastros.html">
+            <li class="listItem">Cadastros</li>
+          </a>
+          <a href="login.html">
+            <li class="listItem">Login</li>
+          </a>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="containerDefault">
+    <section class="containerMenuVertical">
+      <h2 class="subtituloMenuVertical">Cadastros</h2>
+      <nav class="navMenuVertical">
+        <ul>
+          <li class="itemMenu">Categoria</li>
+          <li class="itemMenu">Fornecedor</li>
+          <li class="itemMenu">Peças</li>
+          <li class="itemMenu">Oficina</li>
+          <li class="itemMenu">Serviço</li>
+        </ul>
+      </nav>
+    </section>
+
+    <hr class="divisoria">
+
+    <section class="containerFormulario">
+      <img style="display: none" id="svg_nodata" src="../assets/svg_nodata.svg"
+        alt="Sem dados para informar no momento.">
+
+      <!-- <fieldset class="fieldsetFormulario formularioCategoria">
+        <legend>Categoria</legend>
+        <form class="formularioDefault" action="">
+          <label class="labelConfig" for="inputNome">Nome</label>
+          <input autocomplete="off" id="inputNome" class="inputConfig" placeholder="Digite o nome da categoria" type="text">
+
+          <label class="labelConfig" for="inputDate">Data de criação</label>
+          <input class="inputConfig" id="inputDate" type="date">
+
+          <label class="labelConfig" for="textarea">Descrição</label>
+          <textarea   class="inputConfig" placeholder="Digite uma descrição para a categoria" name="Descrição" id="textarea" cols="10" rows="20"></textarea>
+          <div class="btn-group">
+
+            <button class="btn-submit" onclick="" type="submit">Salvar</button>
+            <button class="btn-cancel">Cancelar</button>
+          </div>
+
+        </form>
+      
+
+      </fieldset> -->
+
+      <!-- <fieldset class="fieldsetFormulario formularioFornecedor">
+        <legend>Fornecedor</legend>
+        <form class="formularioDefault" action="">
+          <label class="labelConfig" for="inputNome">Nome</label>
+          <input autocomplete="off" id="inputNome" class="inputConfig" placeholder="Digite o nome do fornecedor"
+            type="text">
+
+          <label class="labelConfig" for="selectCategria">Categoria</label>
+          <select class="inputConfig" name="categoria" id="selectCategria" placeholder="Selecione">
+            <option selected value="">Selecione</option>
+            <option value="">Elétrica</option>
+            <option value="">Suspensão</option>
+            <option value="">Mecânico</option>
+            <option value="">Acabamento</option>
+            <option value="">Estofaria</option>
+          </select>
+
+          <label class="labelConfig" for="inputCNPJ">CNPJ</label>
+          <input autocomplete="off" id="inputCNPJ" class="inputConfig" placeholder="Digite o nome do fornecedor"
+            type="text">
+
+          <div class="btn-group">
+
+            <button class="btn-submit" onclick="" type="submit">Salvar</button>
+            <button class="btn-cancel">Cancelar</button>
+          </div>
+
+        </form>
+      </fieldset> -->
+
+      <fieldset class="fieldsetFormulario formularioPecas">
+        <legend>Peças</legend>
+        <form action="" class="formularioDefault">
+          <label for="" class="labelConfig">Nome</label>
+          <input placeholder="Digite o nome da peça" type="text" class="inputConfig">
+
+          <label for="inputPreco" class="labelConfig">Preço</label>
+          <input type="text" class="inputConfig" id="inputPreco" placeholder="Digite o valor da peça">
+
+          <label class="labelConfig" for="selectCategria">Categoria</label>
+          <select class="inputConfig" name="categoria" id="selectCategria" placeholder="Selecione">
+            <option selected value="">Selecione a categoria</option>
+            <option value="">Elétrica</option>
+            <option value="">Suspensão</option>
+            <option value="">Mecânico</option>
+            <option value="">Acabamento</option>
+            <option value="">Estofaria</option>
+          </select>
+
+          <label for="" class="labelConfig">Fornecedor</label>
+          <select class="inputConfig" name="fornecedor" id="selectFornecedor" placeholder="Selecione">
+            <option selected value="">Selecione a categoria</option>
+            <option value="">BOSCH</option>
+            <option value="">COFAP</option>
+            <option value="">DELPHI</option>
+            <option value="">MAGNETI MARELLI</option>
+            <option value="">MONROE</option>
+            <option value="">MOURA</option>
+            <option value="">NAKATA</option>
+            <option value="">ONTITECH</option>
+          </select>
+
+
+          <label for="inputDataCompra" class="labelConfig">Data da compra</label>
+          <input id="inputDataCompra" type="date" class="inputConfig" placeholder="">
+
+          <div class="inputRadioGroup">
+            <label  class="labelConfig" for="inputValidade">Validade em: </label>
+
+            <div class="divInputRadio">
+
+              <label class="labelConfig" for="inputValidadeKm">Kilometros</label>
+              <input type="radio" name="inputValidade" id="inputValidadeKm">
+            </div>
+
+            <div class="divInputRadio">
+
+              <label class="labelConfig" for="inputValidadeMeses">Meses</label>
+              <input type="radio" name="inputValidade" id="inputValidadeMeses">
+            </div>
+
+            <div class="divInputRadio">
+
+              <label class="labelConfig" for="inputValidadeAnos">Anos</label>
+              <input type="radio" name="inputValidade" id="inputValidadeAnos">
+            </div>
+
+          </div>
+            
+            <label class="labelConfig" for="inputPrazoValidadePeca">Prazo em </label>
+            <input type="text" class="inputPrazoValidadePeca inputConfig" id="inputPrazoValidadePeca">
+            
+
+          <div class="btn-group">
+
+            <button class="btn-submit" onclick="" type="submit">Salvar</button>
+            <button class="btn-cancel">Cancelar</button>
+          </div>
+        </form>
+      </fieldset>
+
+    </section>
+  </main>
+
+  <footer class="rodapeDefault">
+    Todos os direitos reservados ao criador <a id="linkRodape" target="_blank"
+      href="https://github.com/Joaopdev/">JoaoPDev</a> &copy; 2022
+  </footer>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
